@@ -1,0 +1,88 @@
+/* IMPORT FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1, h2, h3, h5 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+header {
+    background-image: url(./media/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 100vh;
+    color: #FFF;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 2em;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 2em;
+}
+
+.nav li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#contact {
+    background-color: rgba(255, 255, 255, .3);
+    padding: .5em 1em;
+    border-radius: 25px;
+}
+
+header h1 {
+    margin: 74px 0;
+    font-size: 5vw;
+    letter-spacing: 5px;
+}
+
+#arrow{
+    webkit-animation: action 1s infinite alternate;
+    animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes action {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
