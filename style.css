@@ -64,12 +64,12 @@ header h1 {
     letter-spacing: 5px;
 }
 
-#arrow{
-    webkit-animation: action 1s infinite alternate;
-    animation: action 1s infinite alternate;
+#arrow {
+    --webkit-animation: hover 1s infinite alternate;
+    animation: hover 1s infinite alternate;
 }
 
-@-webkit-keyframes action {
+@-webkit-keyframes hover {
     0% {
         transform: translateY(0);
     }
@@ -78,11 +78,56 @@ header h1 {
     }
 }
 
-@keyframes action {
+@keyframes hover {
     0% {
         transform: translateY(0);
     }
     100% {
         transform: translateY(-10px);
     }
+}
+
+/* SERVICES */
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.service {
+    height: 40vw;
+    width: 50%;
+}
+
+.service, .service-image {
+    background-size: cover;
+    background-position: center;
+}
+
+#transform {
+    background-image: url(./media/image-transform.jpg);
+    width: 50%;
+}
+
+#stand-out {
+    background-image: url(./media/image-stand-out.jpg);
+    width: 50%;
+}
+
+#design {
+    background-image: url(./media/image-graphic-design.jpg);
+}
+
+#photography {
+    background-image: url(./media/image-photography.jpg);
+}
+
+.service-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    height: 100%;
+    padding: 5vw;
 }
