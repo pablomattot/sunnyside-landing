@@ -19,11 +19,7 @@ body {
 }
 
 a {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    text-transform: uppercase;
     text-decoration: none;
-    color: #000;
 }
 
 h1, h2, h3, h5 {
@@ -163,4 +159,63 @@ header h1 {
 .service-description p {
     color: hsl(232, 10%, 55%);
     line-height: 1.5;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding: 8vw;
+}
+
+.testimonials h5 {
+    letter-spacing: 5px;
+    color: hsl(210, 4%, 67%);
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3em;
+}
+
+.testimonial img {
+    border-radius: 90px;
+    width: 80px;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+}
+
+.gallery img {
+    width: 25%;
+}
+
+footer {
+    height: 40vh;
+    background-color: hsl(168, 34%, 41%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social img {
+    margin: 0 .5em;
 }
