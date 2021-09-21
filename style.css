@@ -18,10 +18,17 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
+a {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
 h1, h2, h3, h5 {
     font-family: 'Fraunces', serif;
     font-weight: 900;
-    text-transform: uppercase;
 }
 
 header {
@@ -49,7 +56,6 @@ header {
 
 .nav li a {
     color: #FFF;
-    text-decoration: none;
 }
 
 #contact {
@@ -129,5 +135,32 @@ header h1 {
     justify-content: center;
     gap: 2em;
     height: 100%;
-    padding: 5vw;
+    padding: 8vw;
+}
+
+#design .service-description,
+#photography .service-description {
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+}
+
+#design .service-description p,
+#photography .service-description p {
+    color: #000;
+    width: 80%;
+}
+
+.service-description h2 {
+    font-size: 3vw;
+}
+
+.service-description h3 {
+    font-size: 2vw;
+}
+
+.service-description p {
+    color: hsl(232, 10%, 55%);
+    line-height: 1.5;
 }
